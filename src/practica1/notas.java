@@ -14,9 +14,9 @@ public class notas {
 
 	
 	/** Notas de la unidad formativa 1, 2 y 3 */
-	double unidad1, uf2, uf3;
+	double unidad1, unidad2, uf3;
 	
-	/** Nota acumulada unidad1, uf2 y uf3 (35% de cada UF) */
+	/** Nota acumulada unidad1, unidad2 y uf3 (35% de cada UF) */
 	double acu1, acu2, acu3, def;
 	
 	
@@ -26,7 +26,7 @@ public class notas {
 	
 	/**
      * Solicita al usuario la introducción de las tres notas.
-     * * Se guardan en las variables unidad1, uf2 y uf3 respectivamente.
+     * * Se guardan en las variables unidad1, unidad2 y uf3 respectivamente.
      */
 	public void IngresaNotas() {
 		
@@ -42,7 +42,7 @@ public class notas {
 		
 		System.out.print("ingrese nota 2: ");
 		
-		uf2= entrada.nextDouble();
+		unidad2= entrada.nextDouble();
 		
 		
 		System.out.print("ingrese nota 3: ");
@@ -70,7 +70,7 @@ public class notas {
 		
 		// Validación de nota 2
 		
-		if (uf2>10) {
+		if (unidad2>10) {
 			System.out.println(" nota2 mal introducida");
 			
 		}else {
@@ -94,17 +94,17 @@ public class notas {
 	
 	 /**
      * Método que calcula la nota definitiva en base a los porcentajes antes definidos.
-     * UNIDAD1 y UF2 tienen un peso del 35% y UF3 del 30%.
+     * UNIDAD1 y UNIDAD2 tienen un peso del 35% y UF3 del 30%.
      * El resultado se guarda en la variable "def".
      *
      * @see #unidad1
-     * @see #uf2
+     * @see #unidad2
      * @see #uf3
      */
 	
 	public void Calculonotas() {
 		acu1= unidad1*0.35;
-		acu2 = uf2 * 0.35;
+		acu2 = unidad2 * 0.35;
 		acu3 = uf3 * 0.30;
 		
 		// Suma de todos los acumulados para obtener la nota final
@@ -122,7 +122,7 @@ public class notas {
 		//print ln lo que hace es que al terminar el print baja la linea
 		System.out.println(" notas introducidas son:");
 		System.out.println(" nota1 = " + unidad1);
-		System.out.println(" nota2 = " + uf2);
+		System.out.println(" nota2 = " + unidad2);
 		System.out.println(" nota3 = " + uf3);
 		
 		System.out.println(" acumuado 1 = "+ acu1);
