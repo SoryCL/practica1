@@ -34,18 +34,21 @@ public class notas {
 		System.out.println("ingrese las notas del estudiante");
 		
 		
-		System.out.print("ingrese nota 1: ");
+		System.out.println("Ingrese la nota correspondiente a la unidad 1:");
+
 		
 		unidad1= entrada.nextDouble();
 
 		
 		
-		System.out.print("ingrese nota 2: ");
+		System.out.println("Ingrese la nota correspondiente a la unidad 2:");
+
 		
 		unidad2= entrada.nextDouble();
 		
 		
-		System.out.print("ingrese nota 3: ");
+		System.out.println("Ingrese la nota correspondiente a la unidad 3:");
+
 		
 		unidad3= entrada.nextDouble();
 		
