@@ -9,6 +9,8 @@ import java.util.Scanner;
 	 * @since 2025-03-25
 	 */
 
+
+
 public class notas {
 	
 
@@ -28,6 +30,13 @@ public class notas {
      * Solicita al usuario la introducción de las tres notas.
      * * Se guardan en las variables unidad1, unidad2 y unidad3 respectivamente.
      */
+	
+	public void saludoInicial() {
+        System.out.println("Bienvenido al nuevo sistema de cálculo de notas.");
+        System.out.println("Por favor, introduce las calificaciones solicitadas.");
+	}
+	
+	
 	public void IngresaNotas() {
 		
 		
@@ -172,6 +181,8 @@ public class notas {
 		notas fc= new notas();
 		
 		// Se llama a los métodos en orden
+		
+		fc.saludoInicial();
 		
 		fc.IngresaNotas();
 		
